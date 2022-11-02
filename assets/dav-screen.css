@@ -1,0 +1,102 @@
+@media screen and (min-width: 30em) {
+  /* ================
+    ! STYLE - GENERAL ¡
+  ================ */
+  /* ================
+  ! STYLE - HEADER ¡
+================ */
+  /* ?? ---- Header - Menu ---- */
+  .menu-a {
+    width: 25%;
+  }
+
+  /* ==============
+  ! STYLE - INDEX ¡
+============== */
+  /* ?? ---- Container Hello ---- */
+
+  /* ============
+    ! STYLE - CV ¡
+  ============ */
+  /* ? ---- About ---- */
+
+  /* ?? ---- Card-CV ---- */
+}
+
+@media screen and (min-width: 48em) {
+  /* =============
+  ! STYLE - INDEX ¡
+============== */
+  /* ? ---- Container Buubble ---- */
+
+  /* ?? ---- Container Hello ---- */
+  .box-hello {
+    min-height: 50vh;
+    max-width: 40rem;
+  }
+
+  /* ===================
+    ! STYLE - BRIEFCASE ¡
+  =================== */
+  /* ?? ---- Card-CV ---- */
+
+  /* ?? ---- Experience ---- */
+  .experience-list {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  /* ================
+  ! STYLE - HEADER ¡
+================ */
+  /* ?? ---- Header - Menu ---- */
+  .header-menu {
+    background-color: transparent;
+  }
+  .menu-a {
+    width: 19%;
+  }
+
+  /* =============
+  ! STYLE - INDEX ¡
+============== */
+  /* ? ---- Container Head ---- */
+  .container-bubble {
+    min-height: 100vh;
+    border-radius: 0 0% 100% 0%;
+    box-shadow: var(--shadow);
+  }
+  .box-bubble {
+    width: 80%;
+  }
+  .bubble-menu {
+    height: 40vh;
+    width: 70%;
+  }
+  .bubble-menu > a {
+    width: 35%;
+  }
+
+  /* ?? ---- Container Hello ---- */
+  .box-hello {
+    min-height: 80vh;
+  }
+
+  /* ===================
+  ! STYLE - BRIEFCASE ¡
+=================== */
+  /* ?? ---- Card-CV ---- */
+}
+
+@media screen and (min-width: 75em) {
+  /* =============
+  ! STYLE - INDEX ¡
+============== */
+  /* ?? ---- Container Hello ---- */
+
+  /* ===================
+  ! STYLE - BRIEFCASE ¡
+=================== */
+  /* ?? ---- Card-CV ---- */
+}

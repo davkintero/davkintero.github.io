@@ -1,0 +1,277 @@
+@import "dav-style.css";
+
+/* ==========
+  ! FUENTES ¡ 
+========== */
+@font-face {
+  font-family: "zurchlc";
+  src: url("../fonts/zurchlc/zurchlc.eot");
+  src: url("../fonts/zurchlc/zurchlc.eot#?iefix") format("embedded-opentype"),
+    url("../fonts/zurchlc/zurchlc.ttf") format("truetype"),
+    url("../fonts/zurchlc/zurchlc.svg") format("svg"),
+    url("../fonts/zurchlc/zurchlc.woff") format("woff");
+}
+
+/* ====================
+  ! CUSTOM PROPETIES ¡
+==================== */
+:root {
+  /* * Color Media Query * */
+  --cl-bg: linear-gradient(
+    281.39deg,
+    #088cc4 -11.5%,
+    #096590 4.71%,
+    #08415e 27.93%,
+    #083249 39.87%,
+    #0c2436 89.73%
+  );
+
+  /* ** General ** */
+  --font-family: "zurchlc";
+}
+
+/* ================
+  ! STYLE - GENERAL ¡
+================ */
+body {
+  font-family: var(--font-family);
+  background-color: var(--cl-white);
+  font-size: var(--step-1);
+}
+
+h2 {
+  color: var(--cl-blue);
+}
+
+.space-bottom {
+  margin-bottom: 1rem;
+}
+
+/* !! --- COMPONENTES --- !! */
+/* ??? ---- Lineas ---- */
+.dav-line {
+  max-width: 80%;
+}
+
+/* ???? ---- Botones ---- */
+
+/* ================
+  ! STYLE - HEADER ¡
+================ */
+.container-header {
+  background: #fff;
+}
+/* ?? ---- Header - Menu ---- */
+.header-menu {
+  background-color: var(--cl-black-dark);
+}
+.menu-a {
+  border-radius: 0.5rem;
+  padding: 0.5em;
+  width: 40%;
+  color: var(--cl-blue);
+  /*box-shadow: 0 0 1.25rem 0.063rem rgba(0, 0, 0, 0.75);*/
+  background-color: var(--cl-white);
+}
+.menu-a:before {
+  background-color: var(--cl-green);
+}
+/* ??? ---- Boton Toggle ---- */
+.toggle-icon,
+.toggle-icon::after,
+.toggle-icon::before {
+  background-color: var(--cl-blue);
+}
+
+/* =======
+  ! HERO ¡
+  ====== */
+.hero-bg {
+  background: url(../img/bg/dav1.webp) no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.hero-filter {
+  backdrop-filter: blur(6px);
+}
+
+/* ================================================== */
+/* ==============
+  ! STYLE - INDEX ¡
+============== */
+.page-index {
+  min-height: 100vh;
+  max-width: 100%;
+  gap: 0;
+}
+
+/* ? ---- Container Bubble---- */
+.container-bubble {
+  margin: 0 auto;
+}
+.bubble-menu {
+  width: 100%;
+}
+.bubble-menu > a {
+  border-radius: 0.2rem;
+  padding: 0.5em;
+  width: fit-content;
+  color: var(--cl-white);
+  background-color: var(--cl-blue);
+  box-shadow: var(--shadow);
+}
+.bubble-logo > img {
+  max-width: calc(var(--step-5) * 1.5);
+}
+.bubble-p {
+  font-size: var(--step-2);
+  font-weight: 600;
+}
+
+/* ?? ---- Container Hello ---- */
+.container-hello {
+  margin: 0 auto;
+}
+.box-hello {
+  min-height: 40vh;
+}
+.hello-h1 {
+  width: 100%;
+  line-height: 1.2;
+  color: var(--cl-blue);
+}
+.hello-h3 {
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 100%;
+  line-height: 1.5;
+  box-shadow: var(--shadow);
+}
+.hello-jon {
+  width: 50%;
+  font-size: var(--step-0);
+}
+.hello-social {
+  width: 50%;
+}
+.hello-social > a {
+  font-size: var(--step-2);
+}
+
+/* ================================================== */
+/* ============
+  ! STYLE - CV ¡
+============ */
+.cv-title,
+.cv-p {
+  color: var(--cl-white);
+}
+
+/* ? ---- About ---- */
+.about-icon {
+  margin: auto;
+  width: 80%;
+}
+.about-icon img {
+  max-width: calc(var(--step-3) * 2);
+}
+
+/* ?? ---- Card-CV ---- */
+.container-card-cv {
+  padding: 4rem 2rem;
+}
+.box-card-cv {
+  width: max-content;
+}
+.box-card-cv:nth-child(2) {
+  margin: 5rem 0;
+}
+.card-cv-h3 {
+  margin-bottom: 3rem;
+  padding: 0;
+  width: auto;
+  height: fit-content;
+  position: relative;
+  color: var(--cl-blue);
+}
+.card-cv-h3::after,
+.card-cv-h3::before {
+  top: 100%;
+  left: 0;
+  content: " ";
+  height: 0.25rem;
+  width: 3.12rem;
+  position: absolute;
+  background-color: var(--cl-green);
+}
+.card-cv-h3::after {
+  width: 1.56rem;
+  margin-top: 0.5rem;
+}
+.card-cv-list {
+  width: 100%;
+}
+.cv-list-item > img {
+  max-width: calc(var(--step--1) * 2);
+}
+
+/* ?? ---- Experience ---- */
+.container-experience {
+  padding: 5rem 0;
+}
+.experience-item {
+  border-bottom: thin solid var(--cl-bg-hf);
+  padding: 1rem;
+  width: 100%;
+}
+.experience-item > img {
+  max-width: calc(var(--step--1) * 5);
+}
+.item-experience-content {
+  width: 80%;
+}
+.item-experience-content > h4 {
+  margin-bottom: 0.5rem;
+  font-size: var(--step-1);
+  color: var(--cl-green);
+}
+
+/* ================================================= */
+/* =================
+  ! STYLE - DAVCODE ¡
+================= */
+.proyect-title {
+  color: var(--cl-blue);
+}
+
+/* ? ---- Card-Poyect ---- */
+.card-proyect {
+  padding: 1rem;
+  background-color: var(--cl-white);
+  box-shadow: var(--shadow);
+}
+.proyect-head > img {
+  max-width: calc(var(--step-2) * 5);
+}
+.proyect-content {
+  margin-left: 1rem;
+  width: 100%;
+  list-style-type: decimal;
+}
+.proyect-content > li {
+  width: 100%;
+  font-size: var(--step-0);
+  line-height: 1.4;
+}
+.proyect-content > li::marker {
+  color: var(--cl-blue);
+}
+.proyect-content > li > i {
+  color: var(--cl-blue);
+}
+
+/*.proyect-content > li {
+  width: 100%;
+  font-size: var(--step-0);
+  line-height: 1.4;
+}*/
