@@ -1,6 +1,6 @@
 <div align="right">
 
-# ![Logo](img/logo/davquintero_white.svg)
+# ![Logo](img/logo/DavisQuintero_color.svg)
 
 </div>
 
